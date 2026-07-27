@@ -17,11 +17,14 @@ class SkillTests(unittest.TestCase):
         errors = validate_case(SKILL_ROOT / "examples" / "case_001_yao_interview")
         self.assertEqual(errors, [])
 
-    def test_index_contains_validated_case_and_excludes_template(self) -> None:
+    def test_case_002_validates(self) -> None:
+        errors = validate_case(SKILL_ROOT / "examples" / "case_002_zisha_auction_pilot")
+        self.assertEqual(errors, [])
+
+    def test_index_contains_two_cases(self) -> None:
         index = build_index(SKILL_ROOT)
-        self.assertEqual(index["case_count"], 1)
-        self.assertEqual(index["cases"][0]["case_id"], "CASE-001")
-        self.assertNotIn("CASE-002", {case["case_id"] for case in index["cases"]})
+        self.assertEqual(index["case_count"], 2)
+        self.assertEqual([case["case_id"] for case in index["cases"]], ["CASE-001", "CASE-002"])
 
     def test_front_matter_parser(self) -> None:
         data = parse_front_matter("---\ncase_id: CASE-001\nasset_type: case_card\n---\n# Title\n")

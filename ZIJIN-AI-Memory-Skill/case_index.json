@@ -1,26 +1,26 @@
 {
   "version": "0.1.0",
-  "case_count": 1,
+  "case_count": 2,
   "cases": [
     {
       "case_id": "CASE-001",
       "title": "网红猫小红书生态服务商与高校实训合作访谈",
       "date": "2026-07-27",
       "status": "validated",
-      "relationship_types": [
-        "partner",
-        "channel",
-        "project_owner"
-      ],
-      "tags": [
-        "小红书",
-        "服务商",
-        "时尚电商",
-        "高校实训",
-        "跨境试点"
-      ],
+      "relationship_types": ["partner", "channel", "project_owner"],
+      "tags": ["小红书", "服务商", "时尚电商", "高校实训", "跨境试点"],
       "path": "examples/case_001_yao_interview",
       "public_summary": "验证成熟电商服务商与平台资源、高校项目资源之间的联合业务机会识别。"
+    },
+    {
+      "case_id": "CASE-002",
+      "title": "宜兴紫砂跨境直播拍卖验证项目（脱敏草案）",
+      "date": "2026-07-13",
+      "status": "draft",
+      "relationship_types": ["prospective_client", "partner", "project_owner"],
+      "tags": ["紫砂", "跨境直播拍卖", "TikTok Shop", "非遗出海", "职业模型"],
+      "path": "examples/case_002_zisha_auction_pilot",
+      "public_summary": "验证国内直播拍卖团队转向美国市场的准入、货盘、内容、履约和案例共创路径。"
     }
   ]
 }

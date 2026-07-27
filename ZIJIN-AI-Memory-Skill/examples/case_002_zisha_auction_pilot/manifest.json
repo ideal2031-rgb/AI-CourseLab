@@ -1,0 +1,13 @@
+{
+  "case_id": "CASE-002",
+  "title": "宜兴紫砂跨境直播拍卖验证项目（脱敏草案）",
+  "date": "2026-07-13",
+  "source_type": "mixed",
+  "relationship_types": ["prospective_client", "partner", "project_owner"],
+  "evidence_levels": ["confirmed", "inferred", "hypothesis"],
+  "privacy": "public_safe",
+  "status": "draft",
+  "tags": ["紫砂", "跨境直播拍卖", "TikTok Shop", "非遗出海", "职业模型"],
+  "source_note": "依据访谈、试点合作方案和意向协议生成；第三方品牌、工艺师、工坊、账号和经营数据均未在公开案例中展开。",
+  "public_summary": "验证国内直播拍卖团队转向美国市场的准入、货盘、内容、履约和案例共创路径。"
+}

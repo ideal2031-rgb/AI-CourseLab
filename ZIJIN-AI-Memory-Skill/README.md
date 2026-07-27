@@ -41,15 +41,24 @@ examples/case_xxx/
 
 ## 判断原则
 
-- 不默认“交流对象就是客户”。先判断 client、partner、channel、expert、project_owner 或 mixed。
+- 不默认“交流对象就是客户”。先判断 client、prospective_client、partner、channel、expert、project_owner 或 mixed。
 - 区分 confirmed、inferred、hypothesis。
 - 机会必须给出证据、约束、风险和下一步动作。
 - 公开仓库不得保存完整逐字稿、联系方式、未授权商业数据或敏感个人信息。
 
 ## 当前测试案例
 
-- `CASE-001`：网红猫姚总合作访谈（脱敏公开版），用于验证服务商伙伴关系、联合业务机会和高校实训机会识别。
-- `CASE-002`：第二行业案例模板，等待真实资料测试。
+- `CASE-001`：网红猫姚总合作访谈（脱敏公开版），验证服务商伙伴关系、联合业务机会和高校实训机会识别。
+- `CASE-002`：宜兴紫砂跨境直播拍卖验证项目（脱敏草案），验证产业项目所有者、跨境试点、职业模型和后续高校转化机会识别。
+
+## 测试覆盖
+
+- 企业服务商合作访谈
+- 产业资源与跨境经营试点
+- 人物关系多重分类
+- confirmed / inferred / hypothesis 分层
+- 公开案例脱敏
+- 案例索引一致性
 
 ## 版本边界
 
