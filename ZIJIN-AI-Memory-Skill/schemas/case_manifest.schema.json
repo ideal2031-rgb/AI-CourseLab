@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ZIJIN AI Memory Case Manifest",
+  "type": "object",
+  "required": [
+    "case_id",
+    "title",
+    "date",
+    "source_type",
+    "relationship_types",
+    "evidence_levels",
+    "privacy",
+    "status",
+    "tags"
+  ],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^CASE-[0-9]{3}$"},
+    "title": {"type": "string", "minLength": 3},
+    "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "source_type": {
+      "enum": ["interview", "conversation", "meeting", "course_feedback", "idea", "mixed"]
+    },
+    "relationship_types": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": ["client", "prospective_client", "partner", "channel", "expert", "project_owner", "mixed"]
+      }
+    },
+    "evidence_levels": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"enum": ["confirmed", "inferred", "hypothesis"]}
+    },
+    "privacy": {"enum": ["public_safe", "private", "restricted"]},
+    "status": {"enum": ["template", "draft", "validated", "archived"]},
+    "tags": {"type": "array", "items": {"type": "string"}},
+    "source_note": {"type": "string"},
+    "public_summary": {"type": "string"}
+  },
+  "additionalProperties": true
+}

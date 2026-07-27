@@ -1,0 +1,13 @@
+{
+  "case_id": "CASE-001",
+  "title": "网红猫小红书生态服务商与高校实训合作访谈",
+  "date": "2026-07-27",
+  "source_type": "interview",
+  "relationship_types": ["partner", "channel", "project_owner"],
+  "evidence_levels": ["confirmed", "inferred", "hypothesis"],
+  "privacy": "public_safe",
+  "status": "validated",
+  "tags": ["小红书", "服务商", "时尚电商", "高校实训", "跨境试点"],
+  "source_note": "依据用户提供访谈文档生成；公开仓库仅保留脱敏结构化摘要，不保存完整逐字稿。",
+  "public_summary": "验证成熟电商服务商与平台资源、高校项目资源之间的联合业务机会识别。"
+}
