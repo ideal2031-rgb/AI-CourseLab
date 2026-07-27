@@ -1,0 +1,26 @@
+name: ZIJIN AI Memory CI
+
+on:
+  push:
+    paths:
+      - "ZIJIN-AI-Memory-Skill/**"
+      - ".github/workflows/zijin-memory-ci.yml"
+  pull_request:
+    paths:
+      - "ZIJIN-AI-Memory-Skill/**"
+      - ".github/workflows/zijin-memory-ci.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate cases
+        run: python ZIJIN-AI-Memory-Skill/scripts/validate_case.py --all
+      - name: Check case index
+        run: python ZIJIN-AI-Memory-Skill/scripts/build_case_index.py --check
+      - name: Run unit tests
+        run: python -m unittest discover -s ZIJIN-AI-Memory-Skill/tests -v
